@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel = "stylesheet" href = "cart.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+
+</head>
+<body>
+    <header id = "header">        
+
+        <nav id = "first-nav-bar">
+            <div id = "left-elements">
+                <ul>
+                    <li> <a href="index.html"><i style="font-size:18px" class="fa">&#xf015;</i>
+                        Home </a></li>
+                    <li> <a href="about_us.html"><i style="font-size:18px" class="fa">&#xf0c0;</i> About Us </a></li>
+                </ul>
+            </div>
+
+            <div id = "logo">
+                <a href = "index.html"> Classic CURVES </a> 
+            </div>            
+            
+            <div class = "right-elements">
+                <ul>
+                    <li> <a href = "wishlist.html"><i style="font-size:18px" class="fa">&#xf004;</i> Wishlist </a></li>                    
+                    <li> <a href = "cart.html"><i style="font-size:18px" class="fa">&#xf290;</i> Bag </a></li>
+                    <li class="profile-dropdown">
+                        <a href="profile.html"><i style="font-size:18px" class="fa">&#xf2bd;</i> Profile </a>
+                        <div class="profile-dropdown-content">
+                        <a href="#">Sign Up</a>
+                        <a href="#">Sign In</a>                          
+                        </div>
+                    </li>                                        
+                </ul>
+            </div>
+        </nav>  
+                
+        <nav id = "second-nav-bar">
+            <div id = "elements">
+                <ul>
+                    
+                    <li class="dropdown">
+                        <a href="" class="dropbtn">Wear</a>
+                        <div class="dropdown-content">
+                          <a href="western_wear.html">Western Wear</a>
+                          <a href="ethnic_wear.html">Ethnic Wear</a>
+                          <a href="formal_wear.html">Formal Wear</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" >Footwear</a>
+                        <div class="dropdown-content">
+                          <a href="flats.html">Flats</a>
+                          <a href="heels.html">Heels</a>
+                          <a href="shoes.html">Shoes</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropbtn">Bags</a>
+                        <div class="dropdown-content">
+                          <a href="wallets.html">Wallets</a>
+                          <a href="clutches.html">Clutches</a>
+                          <a href="handbags.html">Handbags</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropbtn">Jewellery</a>
+                        <div class="dropdown-content">
+                          <a href="earrings.html">Earrings</a>
+                          <a href="rings.html">Rings</a>
+                          <a href="bangles&bracelets.html">Bangles & Bracelets</a>
+                          <a href="necklace&pendants.html">Necklace & Pendants</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropbtn">Accessories</a>
+                        <div class="dropdown-content">
+                          <a href="sunglasses.html">Sunglasses</a>
+                          <a href="scarfs&stoles.html">Scarfs & Stoles</a>
+                          <a href="belts.html">Belts</a>
+                          <a href="caps&hats.html">Caps & Hats</a>
+                        </div>
+                    </li>                     
+                </ul>
+            </div>             
+        </nav>
+    </header>  
+
+    <div id = "heading">
+        <h3> <span> CART </span></h3>
+    </div>     
+
+    <div id= "container">
+    
+        <div class="table-responsive" style="float: left; width:68%">
+            <table class="table ">
+                <thead class="text-center">
+                    <tr>
+                        <th scope="col" class="border-0 bg-light">
+                            <div class="py-2 text-uppercase">PRODUCT ID</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-light">
+                            <div class="p-2 px-3 text-uppercase">PRODUCT IMAGE</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-light">
+                            <div class="py-2 text-uppercase">PRODUCT NAME</div>
+                        </th>
+                        
+                        <th scope="col" class="border-0 bg-light">
+                            <div class="py-2 text-uppercase">PRICE</div>
+                        </th>
+
+                        <th scope="col" class="border-0 bg-light">
+                            <div class="py-2 text-uppercase">REMOVE</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td class="border-0 align-middle"><strong>101</strong></td>
+                        <td class="border-0 align-middle" style="width:230px;">  <img src="Images/Dresses/1.jpg" alt="" width="120" class="img-fluid rounded shadow-sm"> </td>
+                        <td class="border-0 align-middle"> <h5> Black black black black black black </h5> </td>                        
+                        <td class="border-0 align-middle"><strong>Rs 1500</strong></td>                        
+                        <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td class="border-0 align-middle"><strong>102</strong></td>
+                        <td class="border-0 align-middle" style="width:230px;">  <img src="Images/Dresses/2.jpg" alt="" width="120" class="img-fluid rounded shadow-sm"> </td>
+                        <td class="border-0 align-middle"> <h5 class="mb-0"> Green </h5> </td>                        
+                        <td class="border-0 align-middle"><strong>Rs 1200</strong></td>                        
+                        <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td class="border-0 align-middle"><strong>103</strong></td>
+                        <td class="border-0 align-middle" style="width:230px;">  <img src="Images/Dresses/3.jpg" alt="" width="120" class="img-fluid rounded shadow-sm"> </td>
+                        <td class="border-0 align-middle"> <h5 class="mb-0"> Red Flare Dress </h5> </td>                        
+                        <td class="border-0 align-middle"><strong>Rs 1100</strong></td>                        
+                        <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td class="border-0 align-middle"><strong>104</strong></td>
+                        <td class="border-0 align-middle" style="width:230px;">  <img src="Images/Dresses/4.jpg" alt="" width="120" class="img-fluid rounded shadow-sm"> </td>
+                        <td class="border-0 align-middle"> <h5 class="mb-0"> Blue Maxi Dress </h5> </td>                        
+                        <td class="border-0 align-middle"><strong>Rs 800</strong></td>                        
+                        <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-lg-6" style="float: right; width: 30%;" >
+            <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold text-center">ORDER SUMMARY</div>
+            <div class="p-4">                
+                <ul class="list-unstyled mb-4">
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong><strong>Rs 4600.00</strong></li>
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipping and Handling</strong><strong>Rs 10.00</strong></li>
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tax</strong><strong>Rs 0.00</strong></li>
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
+                    <h5 class="font-weight-bold">Rs 4610.00</h5>
+                    </li>
+                </ul><a href="#" class="btn btn-dark rounded-pill py-2 btn-block">Procceed to checkout</a>
+            </div>
+        </div>  
+    </div>
+ 
+
+    <footer id = "footer" class="container" style="max-width: 100%; margin-bottom: 0;">
+        <div id = "products">             
+            <h3> Products </h3>            
+            <ul>    
+                <li> <a href="western_wear"> Western Wear </a></li>
+                <li> <a href="ethnic_wear"> Ethnic Wear </a></li>
+                <li> <a href="formal_wear"> Formal Wear </a></li>
+                <li> <a href="footwear"> Footwear </a></li>
+                <li> <a href="bags"> Bags </a></li>
+                <li> <a href="jewellery"> Jewellery </a></li>
+                <li> <a href="accessories"> Accessories </a></li>                   
+            </ul>              
+        </div>
+
+        <div id = "useful_links"> 
+            <h3> Useful Links </h3>            
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="about_us.html"> About Us </a></li>
+                <li> <a href="contact_us.html"> Contact Us </a></li>                
+            </ul>           
+            <p id = "copyright">copyright © 2021 – explored</p>
+        </div>
+
+        <div id = "stay_in_touch">
+            <h3> Stay In Touch </h3>            
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank"><i style="font-size:26px" class="fab 5x fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><i style="font-size:26px" class="fab 5x fa-facebook-f"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><i style="font-size:26px" class="fab 5x fa-twitter"></i></a></li>
+                <li><a href="https://www.pinterest.com" target="_blank"><i style="font-size:26px" class="fab 5x fa-pinterest"></i></a></li>
+            </ul>
+        </div>    
+    </footer>  
+
+</body>    
+
+
+<!-- <tr>
+    <td class="border-0 align-middle"><strong>101</strong></td>
+    <td class="border-0 align-middle" style="width:230px;">  <img src="Images/Dresses/1.jpg" alt="" width="120" class="img-fluid rounded shadow-sm"> </td>
+    <td class="border-0 align-middle"> <h5 class="mb-0"> Black Skater Dress </h5> </td>
+     <th scope="row" class="border-0">
+        <div class="p-2">
+            <div class="ml-3 d-inline-block align-middle">
+                <img src="Images/Dresses/1.jpg" alt="" width="120" class="img-fluid rounded shadow-sm">
+            </div>
+            <div class="ml-3 d-inline-block align-middle">
+                <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Black Skater Dress</a></h5>
+            </div>
+        </div>
+    </th> 
+     <td class="border-0 align-middle"><strong>Rs. 1500</strong></td>                        
+    <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+</tr> --> 
+       

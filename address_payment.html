@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="address_payment.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+</head>
+<body>
+    <header id = "header">        
+
+        <nav id = "first-nav-bar">
+            <div id = "left-elements">
+                <ul>
+                    <li> <a href="index.html"><i style="font-size:18px" class="fa">&#xf015;</i>
+                        Home </a></li>
+                    <li> <a href="about_us.html"><i style="font-size:18px" class="fa">&#xf0c0;</i> About Us </a></li>
+                </ul>
+            </div>
+
+            <div id = "logo">
+                <a href = "index.html"> Classic CURVES </a> 
+            </div>            
+            
+            <div class = "right-elements">
+                <ul>
+                    <li> <a href = "wishlist.html"><i style="font-size:18px" class="fa">&#xf004;</i> Wishlist </a></li>                    
+                    <li> <a href = "cart.html"><i style="font-size:18px" class="fa">&#xf290;</i> Bag </a></li>
+                    <li class="profile-dropdown">
+                        <a href="javascript:void(0)"><i style="font-size:18px" class="fa">&#xf2bd;</i> Profile</a>
+                        <div class="profile-dropdown-content">
+                          <a href="#">Sign Up</a>
+                          <a href="#">Sign In</a>                          
+                        </div>
+                    </li>                                        
+                </ul>
+            </div>
+        </nav>  
+                   
+        <nav id = "second-nav-bar">
+            <div id = "elements">
+                <ul>
+                    
+                    <li class="dropdown">
+                        <a href="" class="dropbtn">Wear</a>
+                        <div class="dropdown-content">
+                          <a href="western_wear.html">Western Wear</a>
+                          <a href="ethnic_wear.html">Ethnic Wear</a>
+                          <a href="formal_wear.html">Formal Wear</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" >Footwear</a>
+                        <div class="dropdown-content">
+                          <a href="flats.html">Flats</a>
+                          <a href="heels.html">Heels</a>
+                          <a href="shoes.html">Shoes</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropbtn">Bags</a>
+                        <div class="dropdown-content">
+                          <a href="wallets.html">Wallets</a>
+                          <a href="clutches.html">Clutches</a>
+                          <a href="handbags.html">Handbags</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropbtn">Jewellery</a>
+                        <div class="dropdown-content">
+                          <a href="earrings.html">Earrings</a>
+                          <a href="rings.html">Rings</a>
+                          <a href="bangles&bracelets.html">Bangles & Bracelets</a>
+                          <a href="necklace&pendants.html">Necklace & Pendants</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropbtn">Accessories</a>
+                        <div class="dropdown-content">
+                          <a href="sunglasses.html">Sunglasses</a>
+                          <a href="scarfs&stoles.html">Scarfs & Stoles</a>
+                          <a href="belts.html">Belts</a>
+                          <a href="caps&hats.html">Caps & Hats</a>
+                        </div>
+                    </li>                            
+                </ul>
+            </div>             
+        </nav>
+    </header>       
+    
+    <div id = "content">
+        <div>
+            <div id = "heading">
+                <h3> Choose Delivery Address </h3>
+            </div>
+            <form id = "address">
+                <input
+                class = "input"
+                id = "inaddress"
+                name = "inadress"
+                type = "text"
+                placeholder = "Address" required>
+                <br>
+
+                <input
+                class = "input"
+                id = "pincode"
+                name = "pincode"
+                type = "text" inputmode="numeric"               
+                placeholder = "Pincode" required>
+                <br>
+
+                <input
+                class = "input"
+                id = "state"
+                name = "state"
+                type = "text"
+                placeholder = "State" required> 
+                <br>
+
+                <input
+                class = "input"
+                id = "phone"
+                name = "phone"
+                type = "number"
+                placeholder = "Phone Number" required>
+            </form>
+        </div>
+
+        <div>
+            <div id = "heading">
+                <h3> Choose Payment Mode </h3>
+            </div>
+            <form id = "payment">
+                <input
+                type = "radio"
+                name = "payment"
+                id = "cod"              
+                value = "CASH ON DELIVERY">
+                <label for="cod">CASH ON DELIVERY</label>
+                <br>
+
+                <input
+                type = "radio"
+                name = "payment"
+                id = "credit/debit"               
+                value = "CREDIT/DEBIT CARD">
+                <label for="credit/debit">CREDIT/DEBIT CARD</label>
+                <br>
+
+                <input
+                type = "radio"
+                name = "payment"
+                id = "netBanking"               
+                value = "NET BANKING">
+                <label for="netBanking">NET BANKING</label>
+                <br>
+
+                <input
+                type = "radio"
+                name = "payment"
+                id = "paytm"               
+                value = "PAYTM">
+                <label for="paytm">PAYTM</label>
+                <br>
+
+            </form> 
+        </div>        
+    </div>    
+
+    <div id = "button">
+        <button type="button" class="btn btn-dark btn-block btn-lg">PAY NOW</button>
+    </div>
+
+    <footer id = "footer">
+        <div id = "products">             
+            <h3> Products </h3>            
+            <ul>    
+                <li> <a href="western_wear"> Western Wear </a></li>
+                <li> <a href="ethnic_wear"> Ethnic Wear </a></li>
+                <li> <a href="formal_wear"> Formal Wear </a></li>
+                <li> <a href="footwear"> Footwear </a></li>
+                <li> <a href="bags"> Bags </a></li>
+                <li> <a href="jewellery"> Jewellery </a></li>
+                <li> <a href="accessories"> Accessories </a></li>                   
+            </ul>              
+        </div>
+
+        <div id = "useful_links"> 
+            <h3> Useful Links </h3>            
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="about_us.html"> About Us </a></li>
+                <li> <a href="contact_us.html"> Contact Us </a></li>                
+            </ul>           
+            <p id = "copyright">copyright © 2021 – explored</p>
+        </div>
+
+        <div id = "stay_in_touch">
+            <h3> Stay In Touch </h3>            
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank"><i style="font-size:26px" class="fab 5x fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><i style="font-size:26px" class="fab 5x fa-facebook-f"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><i style="font-size:26px" class="fab 5x fa-twitter"></i></a></li>
+                <li><a href="https://www.pinterest.com" target="_blank"><i style="font-size:26px" class="fab 5x fa-pinterest"></i></a></li>
+            </ul>
+        </div>    
+    </footer>  
+    
+</body>
+</html>

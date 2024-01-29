@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color : #eee;
+    font-family : 'Roboto';   
+}
+
+#header {
+    width: 100%;
+    position : fixed;   
+    z-index: 9; 
+}
+
+#first-nav-bar { 
+    background-color : #eee;       
+    display : flex;    
+    flex-direction: row;
+    align-items: center;
+    justify-content : space-between;    
+    height : 40px;    
+    padding-top: 25px;  
+    padding-bottom: 24px;     
+}
+
+#left-elements ul {
+    display : flex;
+    flex-direction : row;    
+    list-style : none;    
+    justify-content: space-between;     
+    padding-left: 50px;  
+    padding-top: 12px;  
+}
+
+#left-elements li {
+    margin : 0 25px;
+}
+
+#left-elements a {    
+    font-size: 17px;    
+    font-weight: 500;
+    color : black;
+    text-decoration: none;  
+}  
+
+#logo {    
+    background-color: black;
+    padding : 0 50px; 
+    margin-left : 100px; 
+}
+
+#logo a {
+    font-family: 'Cinzel';
+    font-size : 30px;
+    color : white;    
+    text-decoration: none;      
+}
+
+.right-elements ul {
+    display : flex;
+    flex-direction : row;    
+    list-style : none;    
+    justify-content : space-between;     
+    padding-right : 50px;
+    padding-top: 12px; 
+}
+
+.right-elements li {
+    margin : 0 25px;    
+}
+
+.right-elements a {
+    font-size: 17px;    
+    font-weight: 500;
+    color : black;    
+}
+
+.right-elements a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.profile-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.profile-dropdown-content a {      
+    color: black;
+    padding: 10px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.profile-dropdown-content a:hover {
+    background-color: black;
+    color: white;
+}
+
+.profile-dropdown:hover .profile-dropdown-content  {    
+    display: block;    
+}
+
+#second-nav-bar {   
+    display: flex;
+    flex-direction: row;
+    background-color: black;             
+    height : 40px;    
+    align-items: center;    
+}
+
+#elements ul {
+    display : flex;
+    flex-direction : row;    
+    list-style : none;   
+    justify-content: space-between;   
+    padding-top: 12px;      
+}
+
+#elements li {    
+    margin: 0 50px;      
+}
+
+#elements a {
+    font-size : 17px;
+    font-weight: 400;  
+    text-decoration: none;
+    padding : 7px 25px;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color : white;
+}
+
+.dropdown a:hover {
+    background-color: #B00000;
+    color: white;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {    
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: black;
+    color: white;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#content {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    display: flex;    
+    flex-direction: row;
+    margin: 0 180px;
+    justify-content: space-between;
+}
+
+#heading {
+    margin-bottom: 30px;
+    text-align: left;
+    font-family: "Cinzel";
+    border-bottom: 2px solid black;
+}
+
+#address {
+    text-align: center;
+}
+
+#payment {
+    margin-left: 80px;
+}
+
+.input {  
+    font-size: 18px;
+    padding : 5px;
+    margin-bottom: 10px;
+    width : 100%;   
+}
+
+label {
+    font-size: 19px;
+    padding-bottom: 15px;
+}
+
+#button {
+    margin: 0 500px;
+    margin-bottom: 60px;   
+}
+
+#footer {
+    background-color:#282828;
+    color:#eeeeee;
+    display: flex;
+    flex-direction: row;
+    align-items : flex-start;
+    justify-content: space-between;
+    padding : 40px;       
+}
+
+#footer h3 {
+    font-size: 24px;               
+}
+
+#footer ul{
+    text-align: left;
+    list-style: none;
+}
+
+#footer li {
+    line-height: 1.9;
+}
+
+#footer a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #eee;
+}
+
+#products {
+    padding-left: 90px;
+}
+
+#products h3 {
+    padding-left: 40px;
+}
+
+#useful_links {
+    margin-left: 160px;
+}
+
+#useful_links h3 {
+    padding-left : 40px;
+}
+
+#stay_in_touch {
+    padding-right : 120px;    
+}
+
+#stay_in_touch h3 {
+    padding-left: 70px;    
+}
+
+#stay_in_touch ul {
+    display: flex;
+    flex-direction: row;
+    padding-right: 34px;
+}
+
+#stay_in_touch li {
+    margin : 0 15px;
+}
+
+#copyright {
+    font-size: 20px;
+    padding-top : 140px;
+}

@@ -1,0 +1,26 @@
+.box {
+    background-image: linear-gradient(to right, black , #D3D3D3);
+    width: 550px;
+    height: 500px;
+    margin: 150px 450px 150px 400px;
+    padding: 50px;
+    box-shadow: 10px 10px 5px grey;
+  }
+  
+.symbol {
+    margin-left: 220px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+#con_btn{
+margin: 50px 240px 50px 250px;
+font-size:20px;
+font-family:Arial;
+width:100px
+}
+
+  .container {
+    height : 100vh;
+  }

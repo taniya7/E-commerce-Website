@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head> 
+
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" >
+    <link rel="stylesheet" href="sign_up.css">
+
+    <script src="https://kit.fontawesome.com/e051bc8902.js" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+	<script language="javascript">
+	function f_check_password(){
+	var Spass			= document.forms[0].user_password.value;
+	var Sconfirmpass	= document.forms[0].user_confirm_password.value;
+	var Sname			= document.forms[0].user_name.value;
+	var Semail			= document.forms[0].user_email.value;
+	var Scellno			= document.forms[0].cell_number.value;
+	var Sval_msg		= document.getElementById("val_msg");
+	var mailformat		= /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+	
+	
+	if(Semail.length >1 )
+	{
+		if(Semail.match(mailformat)){
+			Sval_msg.innerHTML = "";}
+		else{
+			event.preventDefault();
+			document.forms[0].user_email.focus();
+			Sval_msg.innerHTML = "Invalid Email Address!";
+			return false;
+			}
+	}
+	
+	if(Scellno.length  >1 ){
+		if(Scellno.match(/^\d{10}$/)){
+		Sval_msg.innerHTML = "";}
+		
+		else{
+			event.preventDefault();
+			document.forms[0].cell_number.focus();
+			Sval_msg.innerHTML = "Invalid Mobile Number!";
+			return false;
+			}		
+	}
+	
+	if(Spass.length > 1){
+		event.preventDefault();
+		if(Spass.match(/^[A-Za-z]\w{7,14}$/)){
+			Sval_msg.innerHTML = ""}
+		
+		else{
+			event.preventDefault();
+			document.forms[0].user_password.focus();
+			Sval_msg.innerHTML = "Password must have Characters,Digits & Underscore!";
+			return false;
+		}
+	
+	}
+	
+	
+	if (Spass!=Sconfirmpass){
+		event.preventDefault();
+		document.forms[0].user_confirm_password.focus();
+		Sval_msg.innerHTML = "Passwords do not match";
+		return false;
+		}
+	
+	if (Spass ==Sconfirmpass && Spass != ""){
+	document.forms[0].submit();  
+  }
+  </script>
+  </head>
+  <body>
+
+    <div id="main">
+
+    <div id="image">
+      <img class="SignUpImage" src="Images/SignUpImage.jpeg" alt="SignUpImage" align="right">
+    </div>
+
+  <div class="outer">
+
+    <h1>SIGN UP</h1>
+    <h3>Make your own account</h3>
+	<h6 id="val_msg" style="text-align:center;color:red;" ></h6>
+    <div class="inner">
+      <form id="register" name="register" action="connect.jsp" method="post">
+    <label for="name"></label>
+    <i class="fas fa-users fa-1x"></i>
+    <input type="text" id="user_name" class="input" name="user_name" placeholder="Name" required>
+    <br>
+    <br>
+    <label for="email"></label>
+    <i class="fas fa-envelope fa-1x"></i>
+    <input type="text" id="user_email" class="input" name="user_email" placeholder="Email" required>
+    <br>
+    <br>
+    <label for="number"></label>
+    <i class="fas fa-phone fa-1x"></i>
+	<input type="text" id="cell_number" class="input" name="cell_number" placeholder="Mobile Number" required>
+    <br>
+    <br>
+    <label for="password"></label>
+    <i class="fas fa-unlock-alt fa-1x"></i>
+    <input type="password" id="user_password" class="input" name="user_password" placeholder="Set a Password" required>
+    <br>
+    <br>
+    <label for="password"></label>
+    <i class="fas fa-check fa-1x" ></i>
+    <input type="password" id="user_confirm_password" class="input" name="user_confirm_password" placeholder="Cofirm Password" required>
+    <br>
+    <br>
+	 
+    <button class="btn btn-block btn-dark" type="submit" style="width:60%; margin-left:68px; margin-top:-14px;" onclick="f_check_password()">SUBMIT</button>
+    
+    </form>
+    </div>
+
+    </div>
+
+  </div>
+
+  </body>
+  
+</html>
